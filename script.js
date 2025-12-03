@@ -30,27 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
-    // --- CUSTOM CURSOR (Runs on all pages) ---
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursorOutline = document.querySelector('.cursor-outline');
-    
-    if (cursorDot && cursorOutline) {
-        window.addEventListener('mousemove', (e) => {
-            const { clientX, clientY } = e;
-            cursorDot.style.left = `${clientX}px`;
-            cursorDot.style.top = `${clientY}px`;
-            cursorOutline.style.left = `${clientX}px`;
-            cursorOutline.style.top = `${clientY}px`;
-        });
-        
-        document.querySelectorAll('.link').forEach(link => {
-            link.addEventListener('mouseenter', () => { document.body.classList.add('link-hovered'); });
-            link.addEventListener('mouseleave', () => { document.body.classList.remove('link-hovered'); });
-        });
-    }
-
-
     // --- NAVBAR SCROLL EFFECT (Runs on all pages) ---
     const navbar = document.querySelector('.navbar');
     if (navbar) {
