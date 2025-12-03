@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedElement = document.getElementById('typed-text');
     if (typedElement) {
         new Typed('#typed-text', {
-            strings: ["Software Developer", "AI Enthusiast", "Data Analyst"],
+            strings: ["Software Developer","Full Stack Developer", "Web Application Developer", "AI Enthusiast", "Data Analyst"],
             typeSpeed: 50,
             backSpeed: 30,
             backDelay: 2000,
